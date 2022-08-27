@@ -20,15 +20,15 @@ public class Teams
     @Column(name = "team_id")
     private int id;
 
-    private String teamName;
-
+    private int userId;
     private String location;
+    private String teamName;
     private int rosterSize;
     private double winRate;
     private double ppg;
     private double papg;
-    @OneToMany(mappedBy = "teams")
-    private Set<Players> players;
+//    @OneToMany(mappedBy = "teams")
+//    private Set<Players> players;
 
 
 }

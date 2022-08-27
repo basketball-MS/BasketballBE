@@ -17,6 +17,11 @@ public class Lineup
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int lineup_id;
     private String name;
-    private int player_id;
-    //many-one
+
+    private int player_id1;
+    private int player_id2;
+    private int player_id3;
+    private int player_id4;
+    private int player_id5;
+
 }

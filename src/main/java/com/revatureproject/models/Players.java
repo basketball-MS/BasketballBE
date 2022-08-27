@@ -30,8 +30,6 @@ public class Players
     private double spg;
     private double rpg;
     private double bpg;
-    private int roleId;
-    private int userId;
     @ManyToOne
     @JoinColumn(name = "team_id")
     private Teams teams;

@@ -26,6 +26,14 @@ public class Users
     private int id;
 
     @NotBlank
+    private String firstname;
+    @NotBlank
+    private String lastname;
+    private int exp;
+    @NotBlank
+    private String role;
+
+    @NotBlank
     @Length(max=50)
     @Pattern(regexp="[a-zA-Z][a-zA-Z0-9]*")
     @Column(unique=true)
@@ -38,6 +46,8 @@ public class Users
     @Email
     @Column(unique=true)
     private String email;
+
+
 
 
 }
