@@ -26,10 +26,12 @@ public class Users
     private int id;
 
     @NotBlank
-    private String firstname;
+    private String firstName;
     @NotBlank
-    private String lastname;
-    private int exp;
+    private String lastName;
+    @Column(name="experience")
+    private int experience;
+    @Column(name="role")
     @NotBlank
     private String role;
 

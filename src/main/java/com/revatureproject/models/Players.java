@@ -22,7 +22,7 @@ public class Players
     private String firstname;
     private String lastname;
     private String position;
-    private  double weight;
+    private double weight;
     private double height_inches;
     private double height_feets;
     private double ppg;

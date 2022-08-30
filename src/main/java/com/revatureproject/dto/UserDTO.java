@@ -28,4 +28,9 @@ public class UserDTO
 
     @Email // checks for an @ symbol
     private @NonNull String email;
+
+    @NotBlank
+    private @NonNull String role;
+
+    private int experience;
 }
