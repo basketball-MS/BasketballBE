@@ -11,6 +11,7 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 
+import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -38,6 +39,11 @@ public class TeamService
         System.out.println(t);
         Teams nt = repo.save(t);
         return nt;
+    }
+
+    public Teams updateTeam(Teams t, int id) {
+        Optional<Teams> team = repo.findById(id);
+        return repo.save(t);
     }
 
     @Transactional(propagation = Propagation.REQUIRED)

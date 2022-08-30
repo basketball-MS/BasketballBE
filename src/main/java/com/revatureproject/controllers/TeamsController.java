@@ -39,6 +39,20 @@ public class TeamsController
         return service.addTeam(Team);
     }
 
+    @PatchMapping("/{id}/{location}")
+    public ResponseEntity<Teams> updateTeamLocation(@PathVariable("id") int id, @RequestBody String location) {
+        Teams team = service.getById(id);
+        team.setLocation(location);
+        return new ResponseEntity<Teams>(service.addTeam(team), HttpStatus.OK);
+    }
+
+    @PatchMapping("/change/{id}/{teamName}")
+    public ResponseEntity<Teams> updateTeamName(@PathVariable("id") int id, @RequestBody String teamName) {
+        Teams team = service.getById(id);
+        team.setTeamName(teamName);
+        return new ResponseEntity<Teams>(service.addTeam(team), HttpStatus.OK);
+    }
+
     @GetMapping("/{id}")
     public ResponseEntity<Teams> findByTeamId(@PathVariable("id") int id){
         if (id > 0)

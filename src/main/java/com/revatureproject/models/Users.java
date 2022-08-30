@@ -26,11 +26,11 @@ public class Users
     private int id;
 
     @NotBlank
-    private String firstname;
+    private String firstName;
     @NotBlank
-    private String lastname;
+    private String lastName;
     private int exp;
-    @NotBlank
+    //@NotBlank
     private String role;
 
     @NotBlank
