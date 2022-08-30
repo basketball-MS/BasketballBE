@@ -29,8 +29,10 @@ public class Users
     private String firstName;
     @NotBlank
     private String lastName;
-    private int exp;
-    //@NotBlank
+    @Column(name="experience")
+    private int experience;
+    @Column(name="role")
+    @NotBlank
     private String role;
 
     @NotBlank

@@ -39,8 +39,8 @@ public class AuthenticationController {
             String token = tokenManager.issueToken(user);
 
             // append the token to the header of the RESPONSE
-            response.addHeader("BTMS token", token); // entire token issuer.payload.signature
-            response.addHeader("Access-Control-Expose-Headers", "btms token");
+            response.addHeader("btms-token", token); // entire token issuer.payload.signature
+            response.addHeader("Access-Control-Expose-Headers", "btms-token");
             response.setStatus(200);
 
 
