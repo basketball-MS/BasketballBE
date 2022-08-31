@@ -30,9 +30,10 @@ public class Players
     private double spg;
     private double rpg;
     private double bpg;
-    @ManyToOne
     @JoinColumn(name = "team_id")
-    private Teams teams;
+    private int team_id;
+//    @ManyToOne(cascade=CascadeType.ALL, fetch=FetchType.LAZY)JoinColumn(name="team_foreign_key")
+//    private Team team;
 
 
 }
