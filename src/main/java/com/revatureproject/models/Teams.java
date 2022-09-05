@@ -27,8 +27,8 @@ public class Teams
     private double winRate;
     private double ppg;
     private double papg;
-//    @OneToMany(mappedBy = "teams")
-//    private Set<Players> players;
+//    @OneToMany(mappedBy="team", fetch=FetchType.LAZY)
+//    private List<Player> players;
 
 
 }

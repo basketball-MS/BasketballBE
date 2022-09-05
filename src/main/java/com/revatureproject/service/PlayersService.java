@@ -60,4 +60,12 @@ public class PlayersService
         }
 
     }
+
+//    @Transactional(readOnly = true)
+//    public Set<Players> getAllById(int team_id)
+//    {
+//
+//        return repo.findAllById(team_id).stream().collect(Collectors.toSet());
+//    }
+
 }
